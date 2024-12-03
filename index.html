@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Law Learning App</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font and icons (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Electrolize&family=League+Script&family=News+Cycle:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="C:\sih front page\Purple Blue Futuristic Coming Soon Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            
+            <ul >
+                <div class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MAP</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li></li>
+            </div>
+            
+            </ul>
+            <div class="logo">
+                <a href="#">LOG IN</a>
+                <img src="profile.png" >
+                
+            </div>
+                
+            </div>
+                
+
+           
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+          <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="space"> </div>
+            <button class="btn-primary">Start Your Legal Adventure!</button>
+        </div>
+    </section>
+
+   
+
+    <!-- Interactive Game Preview Section -->
+    <section id="game-preview">
+        <div class="game-card">
+            <h3>Legal Quiz Showdown: Are You a Legal Genius?</h3>
+            <p>Test your knowledge with fun quizzes!</p>
+        </div>
+        <div class="game-card">
+            <h3>Daily Legal Duel: Can You Beat the Clock?</h3>
+            <p>Countdown to the next challenge!</p>
+        </div>
+        <div class="game-card">
+            <h3>Top Lawyers' Hall of Fame: See How You Stack Up!</h3>
+            <p>See where you stand among the best!</p>
+        </div>
+    </section>
+
+    
+    <!-- Chatbot Button -->
+    <div class="chatbot-icon" id="chatbotIcon" onclick="toggleBotpressChat()">
+       
+    </div>
+</div>
+   
+    <!-- Botpress Scripts for Chatbot -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/5b9f21f1-c9ad-43fe-941c-7ea0ec345b62/webchat/v2.1/config.js"></script>
+
+    <!-- Link to JavaScript file -->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        function toggleBotpressChat() {
+            // This will trigger the Botpress chat window programmatically
+            window.botpressWebChat.toggle();
+        }
+
+        window.botpressWebChat.init({
+            hostUrl: "https://cdn.botpress.cloud/webchat/v2",
+            botId: "31bdf0bc-810f-4ab0-90f6-c1440604136c",
+            botName: "LawBot", // Optional: Name your bot
+            showPoweredBy: false, // Optional: Remove Botpress branding
+        });
+    </script>
+</body>
+</html>
